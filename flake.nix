@@ -3,8 +3,8 @@
 
   outputs = { ... }: {
     templates = {
-      nix-develop = ./nix-develop;
-      nix-shell = ./nix-shell;
+      nix-develop.path = ./nix-develop;
+      nix-shell.path = ./nix-shell;
     };
   };
 }
