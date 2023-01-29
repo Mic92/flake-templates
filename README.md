@@ -1,7 +1,7 @@
 # flake templates
 
-I often quickly want to get a development environment for different projects and this repository provide
-me with the template for it:
+I often quickly want to get a development environment for different projects and
+this repository provide me with the template for it:
 
 This is what I have in my `~/.zshrc` to quickly add those templates to new projects:
 
@@ -26,3 +26,5 @@ flakify() {
   ${EDITOR:-vim} flake.nix
 }
 ```
+
+Within the projects I run `nixify` or `flakify` to use these templates.
