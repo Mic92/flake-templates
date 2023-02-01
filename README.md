@@ -11,8 +11,8 @@ nixify() {
     nix flake new -t github:Mic92/flake-templates#nix-shell .
   elif [ ! -e ./.envrc ]; then
     echo "use nix" > .envrc
-    direnv allow
   fi
+  direnv allow
   ${EDITOR:-vim} default.nix
 }
 
@@ -21,8 +21,8 @@ flakify() {
     nix flake new -t github:Mic92/flake-templates#nix-develop .
   elif [ ! -e .envrc ]; then
     echo "use flake" > .envrc
-    direnv allow
   fi
+  direnv allow
   ${EDITOR:-vim} flake.nix
 }
 ```
